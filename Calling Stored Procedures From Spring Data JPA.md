@@ -21,7 +21,11 @@ CREATE OR REPLACE PACKAGE BODY test_pkg AS
       DBMS_OUTPUT.PUT_LINE('in_only_test');
    END in_only_test;
 
-   PROCEDURE in_and_ou
+   PROCEDURE in_and_out_test(inParam1 IN VARCHAR2, outParam1 OUT VARCHAR2) AS
+   BEGIN
+      outParam1 := 'Woohoo Im an outparam, and this is my inparam ' || inParam1;
+   END in_and_out_test;
+END test_pkg;
 ```
 
 Here we have two different procedures:
