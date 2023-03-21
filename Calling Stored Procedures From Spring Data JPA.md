@@ -5,6 +5,7 @@ Created time: March 21, 2023 9:14 AM
 Last edited by: Jap Purohit
 Last edited time: March 21, 2023 9:15 AM
 
+# For Procedure Calling
 Consider the following stored procedure:
 
 ```sql
@@ -77,7 +78,7 @@ The key points are:
 
 We can then call them:
 
-```jsx
+```java
 // This version shows how a param can go in an be returned from a stored procedure
  String inParam = "Hi Im an inputParam";
  String outParam = myTableRepository.inAndOutTest(inParam);
